@@ -15,6 +15,10 @@ public class MyClassJournalController {
      */
     @RequestMapping("/")
     public String index() {
+        JournalEntry journalEntry = new JournalEntry();
+        journalEntry.setNoteTitle("Note Title 1");
+        journalEntry.setNotes("Note Details");
+        journalEntry.setDate("10/4/2023");
 
         return "start";
     }
